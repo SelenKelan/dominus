@@ -20,10 +20,9 @@ crossv2:
 	mkdir -p build
 	$(CC) $(CFLAGS) GPIOClass.cpp GPIOon.cpp -o build/gpion
 	$(CC) $(CFLAGS) GPIOClass.cpp GPIOoff.cpp -o build/gpioff
-
 crossv4:
 	mkdir -p build
-	$(CC) $(CFLAGS) GPIOClass.cpp GPIOserver.cpp -o build/server
+	$(CC) $(CFLAGS) GPIOClass.cpp GPIOserver.cpp -o build/S98server
 	$(CC) $(CFLAGS) GPIOclient.cpp -o build/client
 
 clean:
